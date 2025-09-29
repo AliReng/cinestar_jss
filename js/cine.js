@@ -2,10 +2,9 @@ const getCines = async () => {
     const data = await fetch(`http://localhost/cinestar_sweb_php/cines`)
     if (data.status == 200) {
         const cines = await data.json()
-        let html = `<br/><h1>Nuestros Cines</h1><br/>`
+        let html = `<h2>Cinestar Excelsior</h2> <!-- TAREA -->`
         cines.data.forEach(cine => {
-            html += `
-                <h2>Cinestar Excelsior</h2> <!-- TAREA -->
+            html += `        
 				<div class="cine-info">
 					<div class="cine-info datos">
 						<p>Jirón de la Unión 780 - Lima</p>
